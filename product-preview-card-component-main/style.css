@@ -111,14 +111,14 @@ body {
     text-decoration: line-through;
 }
 
-button.submit {
+.submit {
     margin-top: var(--margin-responsive-md);
     width: 100%;
     border: none;
     padding: 0;
 }
 
-button.submit a {
+a.submit {
     display: block;
     padding: calc(var(--padding-responsive-sm) + 0.2rem);
     border-radius: 0.5rem;
@@ -129,9 +129,10 @@ button.submit a {
     justify-content: center;
     gap: var(--padding-responsive-sm);
     text-decoration: none;
+
 }
 
-button.submit a:hover {
+a.submit:hover {
     background-color:hsl(158, 36%, 20%);
     border-radius: 0.5rem;
 }
