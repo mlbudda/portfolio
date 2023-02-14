@@ -151,7 +151,7 @@ body {
         flex: 1;
         min-width: 362px;
         padding-top: 1vh;
-        padding-right: 8vw;
+        padding-right: 6vw;
         padding-left: 5vw;
     }
     .card-image-overlay {
@@ -166,6 +166,9 @@ body {
         display: none;
     }
 
+    .card-title {
+        font-size: calc(var(--font-size-lg) + 0.5rem);
+    }
     .card-title,
     .card-text {
         text-align: left;
