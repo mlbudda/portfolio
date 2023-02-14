@@ -150,6 +150,9 @@ body {
     .card-body {
         flex: 1;
         min-width: 362px;
+        padding-top: 1vh;
+        padding-right: 8vw;
+        padding-left: 5vw;
     }
     .card-image-overlay {
         bottom: 0px;
@@ -161,6 +164,17 @@ body {
     }
     .card-image-mobile {
         display: none;
+    }
+
+    .card-title,
+    .card-text {
+        text-align: left;
+    }
+
+    .card-stats {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5vw;
     }
 
     .card-image-desktop,
