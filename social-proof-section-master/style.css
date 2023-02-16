@@ -167,7 +167,8 @@ main .container {
 
 .bg-image-top-desktop {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 .bg-image-bottom-desktop {
@@ -175,6 +176,10 @@ main .container {
     bottom: 0;
     right: 0;
     z-index: -1;
+}
+.bg-image-top-mobile,
+.bg-image-bottom-mobile  {
+    display: none;
 }
 
 @media (max-width: 555px) {
@@ -211,5 +216,25 @@ main .container {
 
     .reviews {
         margin-top: 3rem;
+    }
+
+    .bg-image-top-desktop,
+    .bg-image-bottom-desktop  {
+        display: none;
+    }
+
+    .bg-image-top-mobile,
+    .bg-image-bottom-mobile  {
+        display: initial;
+        position: absolute;
+        z-index: -1;
+    }
+    .bg-image-bottom-mobile  {
+        bottom: 0;
+        right: 0;
+    }
+    .bg-image-top-mobile  {
+        top: 0;
+        left: 0;
     }
 }
