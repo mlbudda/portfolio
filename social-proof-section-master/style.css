@@ -173,6 +173,7 @@ main .container {
 .bg-image-bottom-desktop {
     position: absolute;
     bottom: 0;
+    right: 0;
     z-index: -1;
 }
 
