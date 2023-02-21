@@ -136,50 +136,36 @@ footer {
     font-weight: 700;
 }
 
-.card-ios-btn,
-.card-android-btn {
-    all: unset;
-    display: block;
+/*  */
+
+.card-ios-button,
+.card-android-button {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
     width: 100%;
     border-radius: 12px;
-    text-align: center;
-}
-
-.card-ios-btn a,
-.card-android-btn a {
-    display: block;
-    width: 100%;
     padding-block: 0.75rem;
-    text-decoration: none;
+    border: none;
+    font-size: 1.12rem;
 }
 
-.card-ios-btn a svg,
-.card-android-btn a svg {
-    margin-right: 0.5rem;
-}
-
-.card-ios-btn {
+.card-ios-button {
     background-color: var(--black);
-}
-
-.card-android-btn {
-    background-color: var(--white);
-    margin-top: 1rem;
-}
-.card-ios-btn a {
     color: var(--white)
 }
 
-.card-ios-btn:hover {
+.card-android-button {
+    background-color: var(--white);
+    margin-top: 1rem;
+}
+
+.card-ios-button:hover {
     background-color: var(--primary-1);
 }
 
-.card-android-btn:hover {
+.card-android-button:hover {
     background-color: var(--primary-3);
-}
-
-.card-android-btn a {
-    color: var(--black)
 }
 
 footer {
@@ -311,4 +297,16 @@ footer {
         padding-top: 4rem;
         justify-content: flex-start;
     }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
