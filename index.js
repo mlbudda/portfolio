@@ -1,3 +1,5 @@
+import { titleSplitter } from "./helpers.js";
+
 const list = document.querySelector("#solution-list");
 
 const baseUrl = "https://api.github.com";
@@ -9,14 +11,32 @@ fetch(baseUrl + endPoint)
     console.log(data);
     const allDir = data.filter((item) => item.type === "dir");
     allDir.forEach((element) => {
+      console.log(element.html_url + "/screenshot.png");
       list.insertAdjacentHTML(
         "beforeend",
         `
-      <li>
-        <h2>${element.name}</h2>
-        <a href="https://github.com/mlbudda/portfolio/tree/master/${element.path}" target="_blank" rel="noopener noreferrer">Repo</a>
-        <a href="https://mlbudda.github.io/portfolio/${element.path}" target="_blank" rel="noopener noreferrer">Live</a>
-      </li>`
+        <div>
+        <li class="solution-list-item">
+        <div class="img-wrapper">
+        <img
+          src="http://127.0.0.1:5501/${element.path}/screenshot.png"
+          width="300"
+          alt=""
+          class="solution-screenshot"
+        />
+<a href="https://mlbudda.github.io/portfolio/${
+          element.path
+        }" class="img-overlay" target="_blank" rel="noopener noreferrer">
+        <span class="sr-only">Live</span>
+        </a>
+      </div>
+  <h2>${titleSplitter(element.name)}</h2>
+  <a href="https://github.com/mlbudda/portfolio/tree/master/${
+    element.path
+  }" target="_blank" rel="noopener noreferrer" class="repo-btn">Repo</a>
+</li>
+        </div>
+      `
       );
     });
   });
