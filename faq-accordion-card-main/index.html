@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <title>FAQ Accordion Card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -28,69 +28,75 @@
   <body>
     <main>
       <div class="container">
-        <div class="img-wrapper">
-          <img src="images/illustration-woman-online-desktop.svg" alt="" />
-          <img src="images/illustration-box-desktop.svg" alt="" />
-          <img src="images/illustration-woman-online-mobile.svg" alt="" />
+        <div class="img-container">
+          <img
+            src="images/illustration-box-desktop.svg"
+            alt=""
+            class="img-box"
+          />
+          <img
+            src="images/illustration-woman-online-mobile.svg"
+            alt=""
+            class="img-iliustration-mobile"
+          />
+          <img
+            src="images/bg-pattern-mobile.svg"
+            alt=""
+            class="img-bg-mobile"
+          />
         </div>
         <div class="faq-content">
           <h1 class="title">faq</h1>
-          <ul class="faq-content-list">
-            <li>
-              <div class="question-wrapper">
-                <button class="question">
-                  How many team members can I invite?
-                </button>
+          <ul id="faq-list" class="faq-content-list">
+            <li class="question-wrapper">
+              <button class="question">
+                <span>How many team members can I invite?</span>
                 <img src="images/icon-arrow-down.svg" alt="" class="arrow" />
-              </div>
+              </button>
               <p class="answer">
                 You can invite up to 2 additional users on the Free plan. There
                 is no limit on team members for the Premium plan.
               </p>
             </li>
-            <li>
-              <div class="question-wrapper">
-                <button class="question">
-                  What is the maximum file upload size?
-                </button>
-                <img src="images/icon-arrow-down.svg" alt="" class="arrow" />
-              </div>
-
-              <p class="answer">
+            <li class="question-wrapper">
+              <button class="question show">
+                <span>What is the maximum file upload size?</span>
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt=""
+                  class="arrow show"
+                />
+              </button>
+              <p class="answer show">
                 No more than 2GB. All files in your account must fit your
                 allotted storage space.
               </p>
             </li>
-            <li>
-              <div class="question-wrapper">
-                <button class="question">How do I reset my password?</button>
-                <img src="images/icon-arrow-down.svg" alt="" class="arrow" />
-              </div>
-
+            <li class="question-wrapper">
+              <button class="question">
+                <span>How do I reset my password?</span
+                ><img src="images/icon-arrow-down.svg" alt="" class="arrow" />
+              </button>
               <p class="answer">
                 Click “Forgot password” from the login page or “Change password”
                 from your profile page. A reset link will be emailed to you.
               </p>
             </li>
-            <li>
-              <div class="question-wrapper">
-                <button class="question">Can I cancel my subscription?</button>
-                <img src="images/icon-arrow-down.svg" alt="" class="arrow" />
-              </div>
-
+            <li class="question-wrapper">
+              <button class="question">
+                <span>Can I cancel my subscription?</span
+                ><img src="images/icon-arrow-down.svg" alt="" class="arrow" />
+              </button>
               <p class="answer">
                 Yes! Send us a message and we’ll process your request no
                 questions asked.
               </p>
             </li>
-            <li>
-              <div class="question-wrapper">
-                <button class="question">
-                  Do you provide additional support?
-                </button>
-                <img src="images/icon-arrow-down.svg" alt="" class="arrow" />
-              </div>
-
+            <li class="question-wrapper">
+              <button class="question">
+                <span>Do you provide additional support?</span
+                ><img src="images/icon-arrow-down.svg" alt="" class="arrow" />
+              </button>
               <p class="answer">
                 Chat and email support is available 24/7. Phone lines are open
                 during normal business hours.
@@ -106,7 +112,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">mlbudda</a>.
       </div>
     </footer>
     <script src="index.js"></script>

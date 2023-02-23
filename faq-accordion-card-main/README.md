@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/mlbudda/portfolio/tree/master/faq-accordion-card-main)
+- Live Site URL: [Add live site URL here](https://mlbudda.github.io/portfolio/faq-accordion-card-main/)
 
 ## My process
 
@@ -42,26 +42,8 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+This project was simple and yet tricky enough to underestimate the time to complete. The design looks simple, but it has overflow and layers of the 3 background images. Everything has to keep centered positions and align with the text on the right.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mlbudda)
+- Frontend Mentor - [@mlbudda](https://www.frontendmentor.io/profile/mlbudda)
