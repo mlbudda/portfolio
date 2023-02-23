@@ -19,7 +19,7 @@ fetch(baseUrl + endPoint)
         <li class="solution-list-item">
         <div class="img-wrapper">
         <img
-          src="http://127.0.0.1:5501/${element.path}/screenshot.png"
+          src="https://mlbudda.github.io/${element.path}/screenshot.png"
           width="300"
           alt=""
           class="solution-screenshot"
