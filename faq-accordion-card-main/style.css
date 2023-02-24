@@ -65,10 +65,10 @@ ul.faq-content-list {
     flex: 1;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: min(88px, 5vw);
 }
 
 .title {
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -169,6 +169,10 @@ ul.faq-content-list {
 
     .faq-content {
         padding-top: 8rem;
+        padding-left: 0;
+    }
+    .title {
+        text-align: center;
     }
 
     .faq-content-list {
