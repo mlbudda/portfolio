@@ -68,7 +68,7 @@ main {
 
 .img-overlay:hover {
     border-radius: 10px 10px 0 0;
-    background-image: linear-gradient(#CAE4DB6a, #CAE4DB6a), url(images/icons8-youtube-live.svg);
+    background-image: linear-gradient(#CAE4DB6a, #CAE4DB6a), url(icons8-youtube-live.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
