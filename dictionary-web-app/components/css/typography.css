@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+.font--sans-serif {
+    font-family: 'Inter', sans-serif;
+}
+
+.font--serif {
+    font-family: 'Lora', serif;
+}
+.font--mono {
+    font-family: 'Inconsolata', monospace;
+}
+
+.heading--lg {
+    font-size: var(--64-32);
+    line-height: var(--78-40);
+    font-weight: 700;
+    color: var(--color-1);
+}
+
+.heading--md {
+    font-size: var(--24-18);
+    line-height: 1.81rem;
+    font-weight: 400;
+    color: var(--color-2);
+}
+
+.heading--md.phonetic {
+    color: var(--color-4);
+}
+
+.heading--md.part-of-speech {
+    color: var(--color-1);
+    font-weight: 700;
+}
+
+.heading--sm {
+    font-size: var(--20-16);
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--color-3);
+}
+
+.heading--sm-bold {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: var(--color-1);
+}
+
+.heading--sm.synonyms {
+    color: var(--color-4);
+}
+
+.text--md {
+    font-size: var(--18-14);
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--color-1);
+}
+
+.bold {
+    font-weight: 700;
+
+}
+
+.text--sm {
+    font-size: 0.87rem;
+    line-height: 1.06rem;
+    font-weight: 400;
+}
+
+
+

@@ -1,0 +1,48 @@
+.btn {
+    all:unset;
+    outline: revert;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn--play {
+    height: var(--75-48);
+    width: var(--75-48);
+    background-image: var(--play-btn);
+    background-size: cover;
+    transition: translate 180ms;
+}
+.btn--play:hover {
+    background-image: var(--play-btn-hover);
+}
+.btn--play:active {
+    translate: 1px 1px;
+}
+
+.btn--slider {
+    width: 40px;
+    height: 20px;
+    background-color: var(--theme-btn);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+span.slider {
+    display: flex;
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: translate 200ms;
+}
+
+span.slider.checked {
+    translate: 20px 0;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 24px;
+}

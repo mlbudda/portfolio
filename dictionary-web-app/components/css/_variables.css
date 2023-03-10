@@ -1,0 +1,66 @@
+:root {
+
+    --color-1:#2D2D2D;
+    --color-2:#050505;
+    --color-3:#757575;
+    --color-4:#A445ED;
+    --color-5:#a445ed25;
+    --bg-color:#FFFFFF;
+    --input-color: #F4F4F4;
+    --error-color: #FF5252;
+
+    --border-color: #E9E9E9;
+
+    --theme-btn: #757575;
+
+    --shadow: 0px 5px 30px #0000001a;
+
+    --play-btn: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75"><g fill="%23A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5" opacity="0.25"/><path d="M29 27v21l21-10.5z"/></g></svg>');
+    --play-btn-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75"><g fill="%23A445ED" fill-rule="evenodd"><circle cx="37.5" cy="37.5" r="37.5"/><path d="M29 27v21l21-10.5z" fill="white"/></g></svg>');
+
+
+    /* Responsive spacing */
+    /* max 57px - min 24px */
+    --57-25: min(3.6rem, max(1.5rem, 7vw));
+    /* max 52px - min 24px */
+    --52-24: min(3.25rem, max(1.5rem, 7vw));
+    /* max 43px - min 24px */
+    --43-24: min(2.68rem, max(1.5rem, 8vw));
+    /* max 40px - min 32px */
+    --40-32: min(2.5rem, max(2rem, 8vw));
+    /* max 25px - min 17px */
+    --25-17: min(1.56rem, max(1.06rem, 4vw));
+    /* max 46px - min 20px */
+    --46-20: min(2.93rem, max(1rem, 5vw));
+
+/* Responsive Typography */
+/* 64px - 32px */
+--64-32: min(4rem, max(2rem, 8vw));
+/* 78px - 40px */
+--78-40: min(4.81rem, max(2.5rem, 8vw));
+/* 24px - 18px */
+--24-18: min(1.5rem, max(1.12rem, 4vw));
+/* 20px - 16px */
+--20-16: min(1.25rem, max(1rem, 3vw));
+
+/* 18px - 14px */
+--18-14: min(1.12rem, max(0.875rem, 3vw));
+/* 20px - 14px */
+--20-14: min(1.25rem, max(0.875rem, 3vw));
+
+/* 75px - 48px  */
+--75-48: min(75px, max(48px, 12vw));
+
+}
+
+
+html.dark-theme {
+    --color-1:#FFFFFF;
+    --bg-color:#050505;
+    --theme-btn: #A445ED;
+    --input-color: #1F1F1F;
+    --border-color: #3A3A3A;
+    --shadow: 0px 5px 30px var(--color-4);
+
+}
+

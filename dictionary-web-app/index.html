@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Dictionary web app</title>
+  </head>
+  <body>
+    <nav class="container">
+      <img
+        src="./assets/images/logo.svg"
+        alt="Dictionary app Logo"
+        class="nav-logo"
+        width="32"
+        height="38"
+      />
+      <div class="action-menu-wrapper">
+        <div id="dropdown-wrapper">
+          <button
+            id="font-select-btn"
+            class="btn text--md font-selection"
+            placeholder=""
+            readonly
+          /></button>
+          <img src="./assets/images/icon-arrow-down.svg" alt="arrow down" />
+          <ul id="font-selection-list" class="font-dropdown">
+            <li class="dropdown-item text--md bold font--sans-serif">
+              Sans Serif
+            </li>
+            <li class="dropdown-item text--md bold font--serif">Sans</li>
+            <li class="dropdown-item text--md bold font--mono">Mono</li>
+          </ul>
+        </div>
+
+        <button
+          id="change-theme-btn"
+          aria-labelledby="Change Theme"
+          class="btn btn--slider"
+        >
+          <span class="slider"></span>
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 22 22"
+        >
+          <path
+            fill="none"
+            stroke="var(--theme-btn)"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z"
+          />
+        </svg>
+      </div>
+    </nav>
+    <main>
+      <div class="container input-section">
+        <form id="search-form" novalidate>
+          <label for="user-input" class="sr-only">Search for any word:</label>
+          <div class="wrap-input">
+            <input
+              id="user-input"
+              type="text"
+              placeholder="Search for any word..."
+              class="heading--sm-bold"
+            />
+            <button
+              type="submit"
+              aria-labelledby="Search"
+              class="btn search-btn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  fill="none"
+                  stroke="var(--color-4)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m12.663 12.663 3.887 3.887M1 7.664a6.665 6.665 0 1 0 13.33 0 6.665 6.665 0 0 0-13.33 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div id="user-input-err" class="input-error-msg">
+            Whoops, can’t be empty…
+          </div>
+        </form>
+      </div>
+      <div id="no-definition-wrappper" class="container no-words-found"></div>
+      <div
+        id="results-container"
+        class="container word-results-section show"
+      ></div>
+    </main>
+    <div id="loading-spinner" class=""><div class="lds-dual-ring"></div></div>
+    
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
