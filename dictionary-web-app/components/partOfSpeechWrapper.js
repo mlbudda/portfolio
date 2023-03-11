@@ -40,7 +40,7 @@ const definitionsListItem = (data) => {
 const synonymsListItem = (data) => {
   let result = "";
   data.forEach((item) => {
-    result += `<li class="heading--sm synonyms"><a href="#${item}" class="btn">${item}</a></li>`;
+    result += `<li class="heading--sm synonyms"><a href="#" class="btn">${item}</a></li>`;
   });
   return result;
 };

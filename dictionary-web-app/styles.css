@@ -35,11 +35,6 @@ nav.container {
     padding-block: var(--57-25) var(--52-24);
 }
 
-/* nav.container :first-child {
-    width: 10vw;
-    height: auto;
-} */
-
 .action-menu-wrapper {
     display: flex;
     align-items: center;
@@ -222,7 +217,7 @@ ul.definitions > li {
     gap: 1rem;
 }
 
-.synonyms button:hover {
+.synonyms a:hover {
     text-decoration: underline;
 }
 

@@ -27,8 +27,6 @@
           <button
             id="font-select-btn"
             class="btn text--md font-selection"
-            placeholder=""
-            readonly
           /></button>
           <img src="./assets/images/icon-arrow-down.svg" alt="arrow down" />
           <ul id="font-selection-list" class="font-dropdown">
@@ -42,9 +40,8 @@
 
         <button
           id="change-theme-btn"
-          aria-labelledby="Change Theme"
           class="btn btn--slider"
-        >
+        ><span class="sr-only">Change Theme</span>
           <span class="slider"></span>
         </button>
         <svg
@@ -77,9 +74,8 @@
             />
             <button
               type="submit"
-              aria-labelledby="Search"
               class="btn search-btn"
-            >
+            ><span class="sr-only">Search</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
