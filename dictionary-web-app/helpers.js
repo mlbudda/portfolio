@@ -1,4 +1,5 @@
 import { dataParser } from "./dataParser.js";
+import FetchWrapper from "./fetch-wrapper.js";
 
 export const changeFont = () => {
   const selectFont = document.querySelector("#font-select-btn");
@@ -89,14 +90,16 @@ export const queryData = (baseUrl, userInput) => {
   const input = document.querySelector("#user-input");
   input.value = userInput;
 
-  startLoader(loaderElement);
+  const API = new FetchWrapper();
+
+  API.startLoader(loaderElement);
   fetchQuery(baseUrl, userInput)
     .then((data) => {
       dataParser(data);
     })
     .catch((err) => console.error(err))
     .finally(() => {
-      stopLoader(loaderElement);
+      API.stopLoader(loaderElement);
     });
 };
 
@@ -116,11 +119,4 @@ const clearErrorMsg = () => {
       userInputError.classList.remove("show");
     }
   });
-};
-
-const startLoader = (element) => {
-  element.classList.add("show");
-};
-const stopLoader = (element) => {
-  element.classList.remove("show");
 };
