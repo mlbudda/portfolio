@@ -63,10 +63,6 @@ export const changeTheme = () => {
   btn.addEventListener("click", () => handleTheme());
 };
 
-export const fetchQuery = (baseUrl, word) => {
-  return fetch(baseUrl + word).then((res) => res.json());
-};
-
 export const handleUserInput = (baseUrl) => {
   clearErrorMsg();
 
@@ -90,10 +86,10 @@ export const queryData = (baseUrl, userInput) => {
   const input = document.querySelector("#user-input");
   input.value = userInput;
 
-  const API = new FetchWrapper();
+  const API = new FetchWrapper(baseUrl);
 
   API.startLoader(loaderElement);
-  fetchQuery(baseUrl, userInput)
+  API.get(userInput)
     .then((data) => {
       dataParser(data);
     })
