@@ -48,7 +48,7 @@ export const changeFont = () => {
 export const changeTheme = () => {
   const btn = document.querySelector("#change-theme-btn");
 
-  const handleTheme = () => {
+  const handleThemeChange = () => {
     document.documentElement.classList.toggle("dark-theme");
     btn.querySelector("span.slider").classList.toggle("checked");
   };
@@ -57,10 +57,10 @@ export const changeTheme = () => {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    handleTheme();
+    handleThemeChange();
   }
 
-  btn.addEventListener("click", () => handleTheme());
+  btn.addEventListener("click", () => handleThemeChange());
 };
 
 export const handleUserInput = (baseUrl) => {
