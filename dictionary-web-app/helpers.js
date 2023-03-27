@@ -48,7 +48,7 @@ export const changeFont = () => {
 export const changeTheme = () => {
   const btn = document.querySelector("#change-theme-btn");
 
-  const handleTheme = () => {
+  const handleThemeChange = () => {
     document.documentElement.classList.toggle("dark-theme");
     btn.querySelector("span.slider").classList.toggle("checked");
   };
@@ -57,14 +57,10 @@ export const changeTheme = () => {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    handleTheme();
+    handleThemeChange();
   }
 
-  btn.addEventListener("click", () => handleTheme());
-};
-
-export const fetchQuery = (baseUrl, word) => {
-  return fetch(baseUrl + word).then((res) => res.json());
+  btn.addEventListener("click", () => handleThemeChange());
 };
 
 export const handleUserInput = (baseUrl) => {
@@ -90,10 +86,10 @@ export const queryData = (baseUrl, userInput) => {
   const input = document.querySelector("#user-input");
   input.value = userInput;
 
-  const API = new FetchWrapper();
+  const API = new FetchWrapper(baseUrl);
 
   API.startLoader(loaderElement);
-  fetchQuery(baseUrl, userInput)
+  API.get(userInput)
     .then((data) => {
       dataParser(data);
     })
