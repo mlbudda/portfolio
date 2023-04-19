@@ -1,17 +1,20 @@
 <template>
     <div class="search">
         <img :src="iconUrl" :alt="name">
-        <label for="text-search" class="sr-only">
+        <label :for="`text-search${id}`" class="sr-only">
             {{ name }}
         </label>
         <input :value="modelValue" :placeholder="placeholderValue" @input="$emit('update:modelValue', $event.target.value)"
-            type="text" id="text-search">
+            type="text" :id="`text-search${id}`">
     </div>
 </template>
 
 <script setup>
 defineProps(["name", "iconUrl", "modelValue", "placeholderValue",])
 defineEmits(['update:modelValue'])
+
+const id = Math.floor(Math.random() * 10)
+
 </script>
 
 <style scoped>
