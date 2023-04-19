@@ -60,8 +60,8 @@ function onSubmit() {
             </div>
             <Dialog>
                 <div class="dialog-header">
-                    <AppInput name="Search" v-model="searchTerm" icon-url="/desktop/icon-search.svg"
-                        placeholder-value="Filter by title, companies, expertise…">
+                    <AppInput name="Location" v-model="searchLocation" icon-url="/desktop/icon-location.svg"
+                        placeholder-value="Filter by location">
                     </AppInput>
                 </div>
                 <div class="dialog-checkbox-wrapper">
