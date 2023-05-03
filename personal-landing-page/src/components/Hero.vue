@@ -3,12 +3,11 @@
         <v-container class="py-12">
             <v-row justify="start">
                 <v-col>
-                    <h2 class="banner2-title font-weight-light text-grey-darken-2"><v-icon icon="mdi-greater-than"
-                            size="x-small"></v-icon>Hello!
+                    <h2 class="banner2-title font-weight-light text-grey-darken-2 text-sm-h6 text-body-1"> > Hello!
                     </h2>
-                    <h2 class="banner2-title font-weight-light text-grey-darken-2"><v-icon icon="mdi-greater-than"
-                            size="x-small"></v-icon><v-btn variant="tonal" append-icon="mdi-arrow-left"
-                            @click="isGreetActive = true" v-show="!isGreetActive">
+                    <h2 class="banner2-title font-weight-light text-grey-darken-2 text-sm-h6 text-body-1"> > <v-btn
+                            variant="tonal" append-icon="mdi-arrow-left" @click="isGreetActive = true"
+                            v-show="!isGreetActive" size="small">
                             say Hello
                             <template v-slot:append>
                                 <v-icon color="deep-purple-accent-3"></v-icon>
@@ -17,8 +16,9 @@
                         <span v-show="isGreetActive">Hello</span>
                     </h2>
                     <v-slide-x-transition>
-                        <h2 v-show="isGreetActive" class="banner2-title font-weight-light text-grey-darken-2">
-                            <v-icon icon="mdi-greater-than" size="x-small"></v-icon>I'm Ignas
+                        <h2 v-show="isGreetActive"
+                            class="banner2-title font-weight-light text-grey-darken-2 text-sm-h6 text-body-1"> >
+                            I'm Ignas
                             Markauskas, <span class="font-weight-bold">
                                 Front-end Developer</span> based in Vilnius.
                         </h2>
